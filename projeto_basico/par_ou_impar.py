@@ -1,15 +1,18 @@
 print("== PAR OU ÍMPAR ==")
 while True:
+    nome = input("Informe o seu nome: ")
     numero = int(input("Digite um número: "))
-
+    suce = numero + 1
+    ante = numero - 1
 
     if numero % 2 == 0:
-     print("O número é par!")
+     print(f"Olá, {nome}. O número escolhido é par!")
+     print(f"O sucessor desse número é {suce}")
+     print(f"O antecessor desse número é {ante}")
     else:
-     print("O número é ímpar!")
-
-     print("O sucessor desse número é", numero + 1)
-     print("O antecessor desse número é", numero - 1)
+     print(f"Olá, {nome}. O número escolhido é ímpar!")
+     print(f"O sucessor desse número é {suce}")
+     print(f"O antecessor desse número é {ante}")
 
     continuar = input("\nDeseja continuar? (s/n): ")
 
